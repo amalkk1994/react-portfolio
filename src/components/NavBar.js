@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Logo = styled.h1`
   display: inline-block;
+  display: none;
 `;
 
 const StyledNav = styled.nav`
@@ -12,12 +13,16 @@ const StyledNav = styled.nav`
 
 const StyledNavBar = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px;
 
   a {
     margin-right: 60px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
   }
 `;
 

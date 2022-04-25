@@ -1,9 +1,12 @@
+/*
 @import "animate.css";
 
 h1 {
   animation: rubberBand 1s;
   animation-fill-mode: both;
 }
+
+*/
 
 .App {
   text-align: center;
