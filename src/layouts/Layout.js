@@ -8,7 +8,14 @@ import { useOnClickOutside } from "../hooks";
 import { useState, useRef } from "react";
 
 const StyledContainer = styled.div`
-  margin: 5% 10% 5% 10%;
+  margin: auto 10% auto 10%;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 60%;
+    margin-bottom: 40%;
+  }
 `;
 
 const Layout = () => {
@@ -32,3 +39,11 @@ const Layout = () => {
 };
 
 export default Layout;
+
+/*
+
+const StyledContainer = styled.div`
+  margin: 5% 10% 5% 10%;
+`;
+
+*/

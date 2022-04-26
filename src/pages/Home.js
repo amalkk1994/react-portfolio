@@ -1,5 +1,6 @@
 import React from "react";
 import AnimatedLetters from "../components/AnimatedLetters";
+import { theme } from "../theme";
 
 const Home = () => {
   return (
@@ -8,25 +9,26 @@ const Home = () => {
         text="Hi There,"
         animationName="bounceIn"
         animationHover="bounce"
-        fontSize="60px"
+        fontSize="60"
       />
       <AnimatedLetters
         text={`I'm`}
         animationName="bounceIn"
         animationHover="bounce"
-        fontSize="50px"
+        fontSize="50"
       />
       <AnimatedLetters
         text={`Amal K K`}
         animationName="bounceIn"
         animationHover="bounce"
-        fontSize="120px"
+        fontSize="120"
+        fontColor={theme.secondaryColor}
       />
       <AnimatedLetters
         text="Web Developer"
         animationName="bounceIn"
         animationHover="bounce"
-        fontSize="65px"
+        fontSize="65"
       />
     </div>
   );

@@ -6,6 +6,8 @@ import About from "./pages/About";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
+import Experience from "./pages/Experience";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="contact" element={<Contact />} />
             <Route path="about" element={<About />} />
+            <Route path="experience" element={<Experience />} />
+            <Route path="skills" element={<Skills />} />
           </Route>
         </Routes>
       </>

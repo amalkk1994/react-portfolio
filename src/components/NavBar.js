@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 const Logo = styled.h1`
   display: inline-block;
-  display: none;
+  letter-spacing: -8px;
+  color: ${({ theme }) => theme.secondaryColor};
 `;
 
 const StyledNav = styled.nav`
@@ -13,9 +14,14 @@ const StyledNav = styled.nav`
 
 const StyledNavBar = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-bottom: 40px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: none;
+  }
 
   a {
     margin-right: 60px;
@@ -29,7 +35,7 @@ const StyledNavBar = styled.div`
 const NavBar = () => {
   return (
     <StyledNavBar>
-      <Logo>A</Logo>
+      <Logo>AKK</Logo>
       <StyledNav>
         <NavLink exact="true" activeclassname="active" to="/">
           Home
