@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <AnimatedLetters
-        text="Hi There,"
+        text="Hello,"
         animationName="bounceIn"
         animationHover="bounce"
         fontSize="60"

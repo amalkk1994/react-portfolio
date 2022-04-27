@@ -21,4 +21,17 @@ body {
     height: 100vh;
     text-rendering: optimizeLegibility;
 }
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    animation: backInDown 1s;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-top: 30px;
+}
+
 `;

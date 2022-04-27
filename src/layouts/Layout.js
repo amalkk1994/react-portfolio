@@ -9,12 +9,14 @@ import { useState, useRef } from "react";
 
 const StyledContainer = styled.div`
   margin: auto 10% auto 10%;
+  max-width: 60%;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 60%;
+    margin-top: 40%;
     margin-bottom: 40%;
+    max-width: 100%;
   }
 `;
 

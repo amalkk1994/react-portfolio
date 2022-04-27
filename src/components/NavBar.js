@@ -29,6 +29,13 @@ const StyledNavBar = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.2rem;
+    color: #343434;
+    padding: 10px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: rgba(21, 170, 191, 0.5);
+    }
   }
 `;
 

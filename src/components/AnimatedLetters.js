@@ -8,6 +8,7 @@ const StyledSpan = styled.span`
   animation-fill-mode: both;
   text-align: center;
   min-width: 1rem;
+  font-weight: bold;
   color: ${({ fontColor }) => fontColor};
   animation-delay: ${(props) => (props.idx * 1) / 5}s;
 
