@@ -44,6 +44,7 @@ const AnimatedLetters = ({
         <StyledSpan
           animationName={animationIn}
           idx={idx}
+          key={idx}
           animationHover={animationHover}
           fontSize={fontSize}
           fontColor={fontColor}

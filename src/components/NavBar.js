@@ -1,27 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Logo = styled.h1`
   display: inline-block;
   letter-spacing: -8px;
   color: ${({ theme }) => theme.secondaryColor};
+  transition: letter-spacing 1s;
+
+  &:hover {
+    color: red;
+    letter-spacing: 1px;
+  }
 `;
 
 const StyledNav = styled.nav`
   display: inline-block;
-`;
-
-const StyledNavBar = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  margin-bottom: 40px;
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: none;
-  }
 
   a {
     margin-right: 60px;
@@ -36,13 +31,29 @@ const StyledNavBar = styled.div`
     &:hover {
       background-color: rgba(21, 170, 191, 0.5);
     }
+`;
+
+const StyledNavBar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: none;
+  }
+
+
   }
 `;
 
 const NavBar = () => {
   return (
     <StyledNavBar>
-      <Logo>AKK</Logo>
+      <Link to="/">
+        <Logo>AKK</Logo>
+      </Link>
       <StyledNav>
         <NavLink exact="true" activeclassname="active" to="/">
           Home
