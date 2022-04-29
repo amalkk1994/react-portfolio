@@ -27,7 +27,7 @@ p {
     text-align: justify;
     text-justify: inter-word;
     animation: backInDown 1s;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 section {

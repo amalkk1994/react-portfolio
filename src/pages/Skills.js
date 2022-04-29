@@ -26,6 +26,11 @@ const StyledSection = styled.section`
     flex-direction: column;
     gap: 15px;
     animation: bounceIn 1s;
+    transition: transform 1s;
+
+    &:hover {
+      transform: rotate(20deg);
+    }
 
     h2 {
       display: inline-block;

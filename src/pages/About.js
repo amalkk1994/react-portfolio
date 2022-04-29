@@ -25,6 +25,11 @@ const About = () => {
           clearings and core payments banking solutions. Worked for clients like
           Open Bank, ABN AMRO, CITCO, BIL, Varo Money, DFCC, DEKA Bank.
         </p>
+        <p>
+          I graduated from Rajagiri School of Engineering and Technology
+          Kakkanad, Kerala as Bachelor of Technology in Computer Science and
+          Enginerring in 2017 with 8.08 CGPA.
+        </p>
       </section>
     </div>
   );

@@ -19,7 +19,7 @@ const StyledNav = styled.nav`
   display: inline-block;
 
   a {
-    margin-right: 60px;
+    margin-right: 50px;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
