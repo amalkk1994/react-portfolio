@@ -4,5 +4,6 @@ export const theme = {
   primaryHover: "#343078",
   primaryColor: "#ffffff",
   secondaryColor: "#15aabf",
+  tertiaryColor: "#343434",
   mobile: "576px",
 };

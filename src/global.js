@@ -16,7 +16,7 @@ html, body {
 body {
     align-items: center;
     background: ${({ theme }) => theme.primaryColor};
-    color: ${() => theme.primaryDark};
+    color: ${() => theme.tertiaryColor};
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     height: 100vh;
     text-rendering: optimizeLegibility;
@@ -32,6 +32,10 @@ p {
 
 section {
     margin-top: 30px;
+}
+
+section:last-child {
+    margin-bottom: 60px;
 }
 
 `;
