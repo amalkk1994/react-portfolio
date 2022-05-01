@@ -20,6 +20,10 @@ const StyledContainer = styled.div`
   }
 `;
 
+const StyledFooter = styled.footer`
+  height: 40px;
+`;
+
 const Layout = () => {
   const [open, setOpen] = useState(false);
 
@@ -36,6 +40,7 @@ const Layout = () => {
       <StyledContainer>
         <Outlet />
       </StyledContainer>
+      <StyledFooter></StyledFooter>
     </div>
   );
 };

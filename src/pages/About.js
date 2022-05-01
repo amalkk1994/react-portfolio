@@ -1,6 +1,29 @@
 import React from "react";
 import AnimatedLetters from "../components/AnimatedLetters";
 import { theme } from "../theme";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCodepen,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import styled from "styled-components";
+
+const StyledLinksSection = styled.section`
+  ul {
+    list-style-type: none;
+    animation: backInLeft 1s;
+  }
+  li {
+    display: inline-block;
+
+    a {
+      &:hover svg {
+        color: ${({ theme }) => theme.secondaryColor};
+      }
+    }
+  }
+`;
 
 const About = () => {
   return (
@@ -31,6 +54,37 @@ const About = () => {
           Enginerring in 2017 with 8.08 CGPA.
         </p>
       </section>
+      <StyledLinksSection>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/amal-k-k-a54373226/"
+            >
+              <FontAwesomeIcon icon={faLinkedin} color={theme.tertiaryColor} />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/amalkk1994"
+            >
+              <FontAwesomeIcon icon={faGithub} color={theme.tertiaryColor} />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://codepen.io/amalkk1994"
+            >
+              <FontAwesomeIcon icon={faCodepen} color={theme.tertiaryColor} />
+            </a>
+          </li>
+        </ul>
+      </StyledLinksSection>
     </div>
   );
 };

@@ -6,11 +6,21 @@ import styled from "styled-components";
 const StyledDiv = styled.div``;
 
 const ExpStyledSection = styled.section`
+  animation: backInDown 1s;
+
   ul {
     list-style-type: none;
+    margin-top: 10px;
   }
   li {
     line-height: 1.7;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
   }
 `;
 

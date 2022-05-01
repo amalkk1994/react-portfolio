@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { theme } from "../theme";
 
 const Logo = styled.h1`
   display: inline-block;
