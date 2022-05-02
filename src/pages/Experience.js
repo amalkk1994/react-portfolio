@@ -6,11 +6,16 @@ import styled from "styled-components";
 const StyledDiv = styled.div``;
 
 const ExpStyledSection = styled.section`
-  animation: backInDown 1s;
+  h1,
+  h2,
+  h3 {
+    animation: backInLeft 1s;
+  }
 
   ul {
     list-style-type: none;
     margin-top: 10px;
+    animation: backInDown 1s;
   }
   li {
     line-height: 1.7;

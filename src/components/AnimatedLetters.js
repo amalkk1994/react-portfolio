@@ -13,7 +13,7 @@ const StyledSpan = styled.span`
   animation-delay: ${(props) => (props.idx * 1) / 5}s;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: ${(props) => (props.fontSize * 1) / 2}px;
+    font-size: ${(props) => props.fontSizeMobile * 1}px;
   }
 
   &:hover {
@@ -28,6 +28,7 @@ const AnimatedLetters = ({
   animationName = "fadeIn",
   animationHover = "fadeOut",
   fontSize = "24",
+  fontSizeMobile = fontSize,
   fontColor = "#343434",
   colorHover = "red",
 }) => {
@@ -49,6 +50,7 @@ const AnimatedLetters = ({
           fontSize={fontSize}
           fontColor={fontColor}
           colorHover={colorHover}
+          fontSizeMobile={fontSizeMobile}
         >
           {char}
         </StyledSpan>
