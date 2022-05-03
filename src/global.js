@@ -28,6 +28,7 @@ p {
     text-justify: inter-word;
     animation: backInDown 1s;
     margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 section {

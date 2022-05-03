@@ -19,6 +19,13 @@ const ExpStyledSection = styled.section`
   }
   li {
     line-height: 1.7;
+    margin-bottom: 10px;
+    text-align: start;
+    font-size: 1rem;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      margin-bottom: 15px;
+    }
   }
 
   h2 {
